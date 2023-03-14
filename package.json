@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.21"
+  },
+  "name": "richard-chiu-brainflix-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index",
+    "dev": "npx node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ringrazor2/richard-chiu-brainflix-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ringrazor2/richard-chiu-brainflix-api/issues"
+  },
+  "homepage": "https://github.com/ringrazor2/richard-chiu-brainflix-api#readme",
+  "description": ""
+}
