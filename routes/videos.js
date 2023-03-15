@@ -17,13 +17,12 @@ router.get("/", (req, res) => {
 
 router.get("/:id", (req, res) => {
   const id = req.params.id;
-  console.log(req.params);
   const videosData = readVideos();
   const video = videosData.find((vid) => vid.id === id);
 
-    if (!video) {
-      res.status(404).send("Video not found");
-    }
+  if (!video) {
+    res.status(404).send("Video not found");
+  }
   res.send(video);
 });
 
@@ -33,6 +32,10 @@ router.post("/", (req, res) => {
     id: uuid(),
     title: videoObj.title,
     description: videoObj.description,
+    timestamp: Date.now(),
+    image: "https://i.imgur.com/MMDMgD7.jpg",
+    views: "739,945",
+    likes: "98,352",
   };
 
   const videosData = readVideos();
