@@ -33,9 +33,9 @@ router.post("/", (req, res) => {
     title: videoObj.title,
     description: videoObj.description,
     timestamp: Date.now(),
-    image: "https://i.imgur.com/MMDMgD7.jpg",
-    views: "739,945",
-    likes: "98,352",
+    image: "http://localhost:8000/dataImages/image-default.jpeg",
+    views: "0",
+    likes: "0",
   };
 
   const videosData = readVideos();
